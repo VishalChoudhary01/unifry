@@ -546,6 +546,7 @@ text-align: center;
   /* padding-left: 2%; */
   position: relative;
   padding-top: 10%;
+  margin-left: -10%;
 }
 
 
@@ -554,7 +555,7 @@ width: 48px;
 height: 48px;
 background: var(--secondary-color);
 border-radius: 50%;
-padding: 1% 1.5%;
+padding: 1% 2%;
 margin: 2%;
 
 }
@@ -566,7 +567,7 @@ text-align: center;
 }
 .customized_content p:nth-of-type(1){
   font-weight: 800;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-left: -2%;
   margin-bottom: 2%;
 }
@@ -575,6 +576,7 @@ text-align: center;
   color: #857f7f;
   font-weight: 300;
   padding: 2% 0;
+  font-size: 1em;
 }
 
 /* advanatge banner */
@@ -622,6 +624,129 @@ text-align: center;
     0 0 60px 85px #feb47c;
 }
 
+/* testimonial */
+.testimonial{
+  width: 100%;
+  text-align: center;
+}
+.testimonial_header h4{
+  color: #222;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.testimonial_header h2{
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.testimonial_content {
+  width: 100%;
+display: flex;
+justify-content: center;
+padding: 0 5%;
+}
+.testimonial_banner{
+  width: 50%;
+  position: relative;
+}
+.testimonial_details{
+  text-align: left;
+  width: 50%;
+  padding-top: 10%;
+}
+
+.testimonial_details h4{
+  font-size: 2em;
+  padding: 3% 0;
+}
+.testimonial_details p{
+  color: #857f7f;
+}
+.testimonial_details .photos{
+  padding: 2% 0;
+}
+.testimonial_details .personName{
+  color: #000;
+  font-weight: 700;
+}
+
+.testimonial_banner::before {
+  position: absolute;
+  content: "";
+  bottom: 45%;
+  left: 35%;
+  width: 50px;
+  height: 5px;
+  z-index: -10;
+  background: var(--secondary-color);
+  filter: blur(15px);
+  border-radius: 50%;
+  box-shadow: 10px 50px 30px 50px #e63f3f, 0 0 60px 50px #e63f3f,
+    0 0 80px 50px #e63f3f, 0 0 80px 50px #e63f3f, 0 0 80px 50px #e63f3f;
+}
+.testimonial_banner::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 5px;
+  bottom: 45%;
+  left: 45%;
+  z-index: -20;
+  background: #feb47c;
+  filter: blur(15px);
+  border-radius: 50%;
+  box-shadow: 10px 30px 50px 75px #feb47c, 0 0 50px 75px #feb47c,
+    0 0 60px 85px #feb47c, 0 0 60px 85px #feb47c, 0 0 60px 85px #feb47c,
+    0 0 60px 85px #feb47c;
+}
+
+/* FAQ */
+.FAQ {
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.questions {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+.FAQ > p{
+  color: var(--secondary-color);
+  font-size: 1.5em;
+}
+
+.FAQ > h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+
+
+.faq-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.faq-item:hover{
+  box-shadow: 2px 2px 5px 1px #d0cbcb;
+  background-color: #ff6666;
+  color: #ffffff;
+}
+
+
+.faq-item h2 {
+  margin-top: 0;
+  padding: 2% 1%;
+}
+.faq-item p{
+  padding-left: 1%;
+}
 
 /* Media Query Mobile */
 @media (min-width: 240px) and (max-width: 480px) {
@@ -1041,5 +1166,190 @@ text-align: center;
   border-radius: 50%;
   box-shadow: 15px 10px 40px 35px #feb47c, 0 0 40px 55px #feb47c,
     0 0 40px 65px #feb47c;
+}
+/* customized */
+.customized{
+  flex-direction: column-reverse;
+}
+
+.customized_content{
+  width: 100%;
+  /* padding-left: 2%; */
+  position: relative;
+  padding-top: 10%;
+  padding-left:5% ;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.customized_content p span{
+width: 48px;
+height: 48px;
+background: var(--secondary-color);
+border-radius: 50%;
+padding: 1% 2%;
+margin: 2%;
+
+}
+.customized_content p span i{
+  font-size: 18px;
+  color: #fff;
+text-align: center;
+
+}
+.customized_content p:nth-of-type(1){
+  font-weight: 800;
+  font-size: 1.2em;
+  margin-left: -2%;
+  margin-bottom: 2%;
+}
+
+.customized_details{
+  color: #857f7f;
+  font-weight: 300;
+  padding: 2% 0;
+  font-size: 1em;
+}
+
+/* advanatge banner */
+.customized_banner{
+  width: 100%;
+  position: relative;
+}
+.customized_banner img:nth-of-type(1){
+  width: 100%;
+  position: relative;
+}
+.visa{
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  width: 40%;
+}
+/* advanatage background effect */
+.customized_banner::before {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  left: 35%;
+  width: 50px;
+  height: 1px;
+  z-index: -10;
+  background: var(--secondary-color);
+  filter: blur(15px);
+  border-radius: 50%;
+  box-shadow: 5px 20px 20px 50px #e63f3f, 0 0 40px 30px #e63f3f,
+    0 0 80px 50px #e63f3f;
+}
+.customized_banner::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 1px;
+  bottom: 55%;
+  left: 42%;
+  z-index: -20;
+  background: #feb47c;
+  filter: blur(15px);
+  border-radius: 50%;
+  box-shadow: 5px 10px 30px 55px #feb47c, 0 0 40px 45px #feb47c,
+    0 0 40px 45px #feb47c, 0 0 40px 45px #feb47c, 0 0 40px 45px #feb47c;
+}
+/* testimonial */
+.testimonial_header h4{
+  color: #222;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.testimonial_header h2{
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.testimonial_content {
+  width: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 0 5%;
+}
+
+.testimonial_banner{
+  width: 100%;
+  
+}
+.testimonial_banner img{
+  width: 100%;
+}
+.testimonial_details{
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
+}
+
+.testimonial_details h4{
+  font-size: 1.3em;
+  padding: 1% 0;
+}
+.testimonial_details p{
+  font-size: 0.9em;
+}
+/* testimonial background effect */
+.testimonial_banner::before {
+  position: absolute;
+  content: "";
+  bottom: 45%;
+  left: 40%;
+  width: 50px;
+  height: 1px;
+  z-index: -10;
+  background: var(--secondary-color);
+  filter: blur(15px);
+  border-radius: 70%;
+  box-shadow: 5px 20px 20px 20px #e63f3f, 0 0 40px 30px #e63f3f,
+    0 0 40px 30px #e63f3f;
+}
+.testimonial_banner::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 5px;
+  bottom: 45%;
+  left: 40%;
+  z-index: -20;
+  background: #feb47c;
+  filter: blur(15px);
+  border-radius: 50%;
+  box-shadow: 15px 10px 40px 35px #feb47c, 0 0 40px 55px #feb47c,
+    0 0 40px 65px #feb47c;
+}
+
+/* faq */
+.questions {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.FAQ > p{
+  color: var(--secondary-color);
+  font-size: 1.2em;
+}
+
+.FAQ > h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.faq-item h2 {
+ font-size: 1.2em;
+}
+.faq-item p{
+  padding-left: 1%;
+  font-size: 0.8em;
+  color: #5f5656;
 }
 }
