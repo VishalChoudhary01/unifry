@@ -754,6 +754,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
+  border-radius: 5px;
 }
 
 .righttopeclipse {
@@ -897,13 +898,11 @@ button span img {
   }
   .active {
     display: block;
-    position: absolute;
-    background: rgba(233, 228, 228, 0.425);
-    backdrop-filter: blur(8px);
-    top: 8%;
+    background:white;
+    top: 0;
     right: 0;
-    width: 400px;
-    height: 98dvh;
+    width: 100svw;
+    height: 98svh;
     padding-top: 10%;
     padding-left: 5%;
     border-radius: 4px;
@@ -911,12 +910,19 @@ button span img {
     box-shadow: 0 0 2px 2px #c4c0c0;
    
   }
-  .side_menu ul li {
+  .side_menu ul a {
+    padding-bottom: 5%;
     z-index: 8000;
-    color: red;
+    color: rgb(21, 19, 19);
+    color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  .side_menu ul li{
+    list-style: none;
   }
   .fa-xmark {
     color: #2222;
@@ -937,7 +943,6 @@ button span img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background: #b3adad; */
   }
   .content {
     width: 100%;
