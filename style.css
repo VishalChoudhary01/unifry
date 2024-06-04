@@ -914,7 +914,6 @@ button span img {
     padding-bottom: 2%;
     margin-bottom: 1%;
     z-index: 8000;
-    color: rgb(21, 19, 19);
     color: var(--secondary-color);
     display: flex;
     justify-content: center;
@@ -922,6 +921,9 @@ button span img {
     text-decoration: none;
     font-size: 1.4em;
     line-height: 35px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgb(148, 146, 146);
   }
   .side_menu ul li{
     list-style: none;
