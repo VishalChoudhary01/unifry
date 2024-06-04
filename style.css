@@ -899,8 +899,7 @@ button span img {
     display: block;
     position: absolute;
     background: rgba(233, 228, 228, 0.425);
-    /* backdrop-filter: blur(8px); */
-    background: #000;
+    backdrop-filter: blur(8px);
     top: 8%;
     right: 0;
     width: 400px;
@@ -910,19 +909,23 @@ button span img {
     border-radius: 4px;
     border: 2px solid #fff;
     box-shadow: 0 0 2px 2px #c4c0c0;
-    z-index: 1000;
+   
   }
   .side_menu ul li {
     z-index: 8000;
     color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .fa-xmark {
-    color: #ece3e3b1;
-    position: relative;
-    top: -25px;
-    left: 160px;
+    color: #2222;
+    position: absolute;
+    top: 2%;
+    right: 2%;
     font-size: 1.5em;
     padding: 0 10px;
+    z-index: 200;
   }
   .star {
     display: none;
